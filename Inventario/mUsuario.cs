@@ -51,11 +51,11 @@ namespace Inventario
             string cmd = string.Format("exec LoginUsuario '{0}','{1}','{2}'", bCodigo.Text.Trim(), bPassword.Text.Trim(), false);
 
             DS = Utilidades.utilidades.ConectarSQL(cmd);
+            string contraseña = DS.Tables[0].Rows[0]["Password"].ToString().Trim();
             bool resultado = Convert.ToBoolean(DS.Tables[0].Rows[0]["Result"]);
-
-            if (resultado)
+            
+            if (resultado || string.IsNullOrEmpty(contraseña))
             {
-
                 int nivel = Convert.ToInt32(bNivel.Text.Trim());
                 if (nivel >= 1 && nivel <= 5)
                 {

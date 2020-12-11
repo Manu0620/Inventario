@@ -176,12 +176,6 @@
       <DependentUpon>rFactura.cs</DependentUpon>
     </Compile>
     <Compile Include="Clases\Suplidores.cs" />
-    <Compile Include="TareaGV.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TareaGV.Designer.cs">
-      <DependentUpon>TareaGV.cs</DependentUpon>
-    </Compile>
     <Compile Include="Clases\Unidades.cs" />
     <Compile Include="Clases\Clientes.cs" />
     <Compile Include="Consultas.cs">
@@ -419,9 +413,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="rUnidades.resx">
       <DependentUpon>rUnidades.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TareaGV.resx">
-      <DependentUpon>TareaGV.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="InventarioDataSet.xsc">
       <DependentUpon>InventarioDataSet.xsd</DependentUpon>
