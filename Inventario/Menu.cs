@@ -19,7 +19,7 @@ namespace Inventario
                 int height
             );
 
-        private int childFormNumber = 0;
+        private int childFormNumber, Nivel = 0;
 
         public Menu()
         {
@@ -90,6 +90,38 @@ namespace Inventario
             Ejemplos obj = new Ejemplos();
             //obj.MdiParent = this;
             obj.Show();
+        }
+
+        public void NivelUsuario(DataSet DS)
+        {
+            Nivel = Convert.ToInt32(DS.Tables[0].Rows[0]["Nivel"].ToString());
+            switch (Nivel)
+            {
+                case 2:
+                    {
+                        usuariosToolStripMenuItem.Enabled = false;
+                    }
+                    break;
+                case 3:
+                    {
+                        tsMantenimientos.Enabled = false;
+                    }
+                    break;
+                case 4:
+                    {
+                        tsMantenimientos.Enabled = false;
+                        facturaToolStripMenuItem1.Enabled = false;
+                    }
+                    break;
+                case 5:
+                    {
+                        tsMantenimientos.Enabled = false;
+                        facturaToolStripMenuItem1.Enabled = false;
+                        tsProcesos.Enabled = false;
+                    }
+                    break;
+                default: break;
+            }
         }
 
         private void Menu_Load(object sender, EventArgs e)

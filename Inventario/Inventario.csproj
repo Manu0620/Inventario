@@ -304,6 +304,13 @@
     <Compile Include="rUnidades.Designer.cs">
       <DependentUpon>rUnidades.cs</DependentUpon>
     </Compile>
+    <Compile Include="rUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rUsuarios.Designer.cs">
+      <DependentUpon>rUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clases\Usuarios.cs" />
     <EmbeddedResource Include="Acerca.resx">
       <DependentUpon>Acerca.cs</DependentUpon>
     </EmbeddedResource>
@@ -343,7 +350,6 @@
     <EmbeddedResource Include="FormBase.resx">
       <DependentUpon>FormBase.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ImprimirFactura.rdlc" />
     <EmbeddedResource Include="ImprimirFactura.resx">
       <DependentUpon>ImprimirFactura.cs</DependentUpon>
     </EmbeddedResource>
@@ -390,6 +396,8 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="ImprimirFactura1.rdlc" />
+    <EmbeddedResource Include="rUsuarios.rdlc" />
     <EmbeddedResource Include="rFactura.rdlc" />
     <EmbeddedResource Include="rFactura.resx">
       <DependentUpon>rFactura.cs</DependentUpon>
@@ -414,6 +422,9 @@
     <EmbeddedResource Include="rUnidades.resx">
       <DependentUpon>rUnidades.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="rUsuarios.resx">
+      <DependentUpon>rUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="InventarioDataSet.xsc">
       <DependentUpon>InventarioDataSet.xsd</DependentUpon>
     </None>
@@ -435,6 +446,7 @@
     <None Include="Properties\DataSources\ProductosVendidos.datasource" />
     <None Include="Properties\DataSources\Suplidores.datasource" />
     <None Include="Properties\DataSources\Unidades.datasource" />
+    <None Include="Properties\DataSources\Usuarios.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

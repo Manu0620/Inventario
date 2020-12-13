@@ -28,6 +28,16 @@ namespace Inventario
                 dataUsuario.DataSource = DS.Tables[0];
         }
 
+        public override void Imprimir()
+        {
+            rUsuarios obj = new rUsuarios();
+            if (Utilidades.utilidades.dsTieneDatos(DS))
+            {
+                obj.MostrarDatos(DS);
+                obj.Show();
+            }
+        }
+
         private void bSeleccionar_Click(object sender, EventArgs e)
         {
             if (Utilidades.utilidades.dsTieneDatos(DS))

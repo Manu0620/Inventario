@@ -1,11 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Inventario
@@ -52,7 +47,7 @@ namespace Inventario
 
             productosVendidosBindingSource.DataSource = lst;
             facturaClienteBindingSource.DataSource = lst1;
-            this.reportViewer1.RefreshReport();
+            reportViewer1.RefreshReport();
         }
 
         private void iconPictureBox1_Click(object sender, EventArgs e)

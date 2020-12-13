@@ -23,6 +23,7 @@ namespace Inventario
                 return;
 
             DS = Utilidades.utilidades.ConectarSQL("SELECT * FROM Usuarios WHERE codUsuario='" + bCodigo.Text.Trim() + "'");
+            string cmd = string.Format("exec LoginUsuario '{0}','{1}','{2}'", bCodigo.Text.Trim(), bPassword.Text.Trim(), false);
             bNombre.Text = "";
             bPassword.Text = "";
             bNivel.Text = "";
@@ -30,9 +31,10 @@ namespace Inventario
             if (DS.Tables.Count > 0 && DS.Tables[0].Rows.Count > 0)
             {
                 bNombre.Text = DS.Tables[0].Rows[0]["nUsuario"].ToString().Trim();
-                bPassword.Text = DS.Tables[0].Rows[0]["Password"].ToString().Trim();
                 bNivel.Text = DS.Tables[0].Rows[0]["Nivel"].ToString().Trim();
                 ckEstado.Checked = Convert.ToBoolean(DS.Tables[0].Rows[0]["Estado"]);
+                DS = Utilidades.utilidades.ConectarSQL(cmd);
+                bPassword.Text = DS.Tables[0].Rows[0]["Password"].ToString();
             }
             else
             {
@@ -48,33 +50,20 @@ namespace Inventario
             if (Utilidades.utilidades.ValidaForm(this, errorProvider))
                 return;
 
-            string cmd = string.Format("exec LoginUsuario '{0}','{1}','{2}'", bCodigo.Text.Trim(), bPassword.Text.Trim(), false);
+            string cmd = string.Empty;
 
-            DS = Utilidades.utilidades.ConectarSQL(cmd);
-            string contraseña = DS.Tables[0].Rows[0]["Password"].ToString().Trim();
-            bool resultado = Convert.ToBoolean(DS.Tables[0].Rows[0]["Result"]);
-            
-            if (resultado || string.IsNullOrEmpty(contraseña))
+            int nivel = Convert.ToInt32(bNivel.Text.Trim());
+            if (nivel >= 1 && nivel <= 5)
             {
-                int nivel = Convert.ToInt32(bNivel.Text.Trim());
-                if (nivel >= 1 && nivel <= 5)
-                {
-                    cmd = string.Format("exec usuarioActualiza '{0}','{1}','{2}','{3}','{4}'",
-                    bCodigo.Text.Trim(), bNombre.Text.Trim(), bPassword.Text.Trim(), ckEstado.Checked, bNivel.Text.Trim());
+                cmd = string.Format("exec usuarioActualiza '{0}','{1}','{2}','{3}','{4}'",
+                bCodigo.Text.Trim(), bNombre.Text.Trim(), bPassword.Text.Trim(), ckEstado.Checked, bNivel.Text.Trim());
 
-                    DS = Utilidades.utilidades.ConectarSQL(cmd);
-                    Limpiar();
-                }
-                else
-                    MessageBox.Show("El nivel debe ser del 1 al 5");
-
+                DS = Utilidades.utilidades.ConectarSQL(cmd);
+                Limpiar();
             }
             else
-            {
-                MessageBox.Show("Debes poner la contraseña correctamente para hacer cambios en este usuario!");
-                return;
-            }
-            
+                MessageBox.Show("El nivel debe ser del 1 al 5");
+
         }
 
         public override void Limpiar()

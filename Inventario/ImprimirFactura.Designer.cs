@@ -31,25 +31,33 @@
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.productosVendidosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.facturaClienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.productosVendidosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.facturaClienteBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // productosVendidosBindingSource
+            // 
+            this.productosVendidosBindingSource.DataSource = typeof(Inventario.ProductosVendidos);
+            // 
+            // facturaClienteBindingSource
+            // 
+            this.facturaClienteBindingSource.DataSource = typeof(Inventario.Clases.FacturaCliente);
             // 
             // reportViewer1
             // 
             this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            reportDataSource1.Name = "DataProductosVendidos";
+            reportDataSource1.Name = "ProductosVendidos";
             reportDataSource1.Value = this.productosVendidosBindingSource;
-            reportDataSource2.Name = "DataFacturaCliente";
+            reportDataSource2.Name = "FacturaCliente";
             reportDataSource2.Value = this.facturaClienteBindingSource;
             this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
             this.reportViewer1.LocalReport.DataSources.Add(reportDataSource2);
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "Inventario.ImprimirFactura.rdlc";
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "Inventario.ImprimirFactura1.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(0, 0);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
@@ -70,14 +78,6 @@
             this.iconPictureBox1.TabStop = false;
             this.iconPictureBox1.Click += new System.EventHandler(this.iconPictureBox1_Click);
             // 
-            // productosVendidosBindingSource
-            // 
-            this.productosVendidosBindingSource.DataSource = typeof(Inventario.ProductosVendidos);
-            // 
-            // facturaClienteBindingSource
-            // 
-            this.facturaClienteBindingSource.DataSource = typeof(Inventario.Clases.FacturaCliente);
-            // 
             // ImprimirFactura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -90,9 +90,9 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ImprimirFactura";
             this.Load += new System.EventHandler(this.ImprimirFactura_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productosVendidosBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.facturaClienteBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

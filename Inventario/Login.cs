@@ -18,6 +18,7 @@ namespace Inventario
                 int width,
                 int height
             );
+        public DataSet DS = new DataSet();
 
         public Login()
         {
@@ -32,7 +33,6 @@ namespace Inventario
 
         private void bIngresar_Click(object sender, EventArgs e)
         {
-            DataSet DS;
             string cmd = string.Format("exec LoginUsuario '{0}','{1}','{2}'", bCodigo.Text.Trim(), bPassword.Text.Trim(), false);
             DS = Utilidades.utilidades.ConectarSQL(cmd);
 
@@ -60,7 +60,8 @@ namespace Inventario
                     {
                         bienvenido.DarBienvenida(DS);
                         bienvenido.ShowDialog();
-                    } 
+                    }
+                    obj.NivelUsuario(DS);
                     obj.Show();
                 }
             }
@@ -71,36 +72,5 @@ namespace Inventario
             }
                 
         }
-
     }
 }
-
-/*string cmd = string.Format("exec LoginUsuario '{0}','{1}','{2}'", bCodigo.Text.Trim(), bPassword.Text.Trim(), false);
-DataSet DS = Utilidades.utilidades.ConectarSQL(cmd);
-
-bool resultado = Convert.ToBoolean(DS.Tables[0].Rows[0]["Result"]);
-
-if (resultado)
-{
-    Form frm = Application.OpenForms.Cast<Form>().FirstOrDefault(x => x is Menu);
-    Menu obj = new Menu();
-
-    if (frm != null)
-    {
-        Advertencia.Visible = true;
-        Advertencia.Text = "      Menu abierto!";
-    }
-    else
-    {
-        Advertencia.Visible = false;
-        Advertencia.Text = "";
-        bCodigo.Text = "";
-        bPassword.Text = "";
-        obj.Show();
-    }
-}
-else
-{
-    Advertencia.Visible = true;
-    Advertencia.Text = "      Contraseña incorrecta!";
-}*/
