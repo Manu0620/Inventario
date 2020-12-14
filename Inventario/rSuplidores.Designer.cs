@@ -29,20 +29,20 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource3 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource4 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.SuplidorBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.InventarioDataSet = new Inventario.InventarioDataSet();
+            this.suplidoresBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.SuplidorTableAdapter = new Inventario.InventarioDataSetTableAdapters.SuplidorTableAdapter();
             this.suplidoresBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.suplidoresBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.suplidoresBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.SuplidorBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.InventarioDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.suplidoresBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.suplidoresBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.suplidoresBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.suplidoresBindingSource2)).BeginInit();
             this.SuspendLayout();
             // 
             // SuplidorBindingSource
@@ -55,16 +55,20 @@
             this.InventarioDataSet.DataSetName = "InventarioDataSet";
             this.InventarioDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
+            // suplidoresBindingSource2
+            // 
+            this.suplidoresBindingSource2.DataSource = typeof(Inventario.Suplidores);
+            // 
             // reportViewer1
             // 
             this.reportViewer1.AutoSize = true;
             this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            reportDataSource1.Name = "DatosSuplidores";
-            reportDataSource1.Value = this.SuplidorBindingSource;
-            reportDataSource2.Name = "DataSet1";
-            reportDataSource2.Value = this.suplidoresBindingSource2;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource2);
+            reportDataSource3.Name = "DatosSuplidores";
+            reportDataSource3.Value = this.SuplidorBindingSource;
+            reportDataSource4.Name = "DataSet1";
+            reportDataSource4.Value = this.suplidoresBindingSource2;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource3);
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource4);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "Inventario.rSuplidores.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(0, 0);
             this.reportViewer1.Name = "reportViewer1";
@@ -88,25 +92,24 @@
             // 
             this.suplidoresBindingSource1.DataSource = typeof(Inventario.Suplidores);
             // 
-            // suplidoresBindingSource2
-            // 
-            this.suplidoresBindingSource2.DataSource = typeof(Inventario.Suplidores);
-            // 
             // rSuplidores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(871, 689);
             this.Controls.Add(this.reportViewer1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "rSuplidores";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "rSuplidores";
+            this.Text = "Reporte de Suplidores";
             this.Load += new System.EventHandler(this.rSuplidores_Load);
             ((System.ComponentModel.ISupportInitialize)(this.SuplidorBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.InventarioDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.suplidoresBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.suplidoresBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.suplidoresBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.suplidoresBindingSource2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

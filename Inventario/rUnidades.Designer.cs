@@ -33,14 +33,14 @@
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.UnidadesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.InventarioDataSet = new Inventario.InventarioDataSet();
+            this.unidadesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.UnidadesTableAdapter = new Inventario.InventarioDataSetTableAdapters.UnidadesTableAdapter();
             this.suplidoresBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.unidadesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.UnidadesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.InventarioDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.suplidoresBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.unidadesBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.suplidoresBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // UnidadesBindingSource
@@ -52,6 +52,10 @@
             // 
             this.InventarioDataSet.DataSetName = "InventarioDataSet";
             this.InventarioDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // unidadesBindingSource1
+            // 
+            this.unidadesBindingSource1.DataSource = typeof(Inventario.Unidades);
             // 
             // reportViewer1
             // 
@@ -82,24 +86,21 @@
             // 
             this.suplidoresBindingSource.DataSource = typeof(Inventario.Suplidores);
             // 
-            // unidadesBindingSource1
-            // 
-            this.unidadesBindingSource1.DataSource = typeof(Inventario.Unidades);
-            // 
             // rUnidades
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(732, 632);
             this.Controls.Add(this.reportViewer1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "rUnidades";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "rUnidades";
+            this.Text = "Reporte de Unidades";
             this.Load += new System.EventHandler(this.rUnidades_Load);
             ((System.ComponentModel.ISupportInitialize)(this.UnidadesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.InventarioDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.suplidoresBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.unidadesBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.suplidoresBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -132,6 +132,12 @@
       <DependentUpon>cUsuarios.cs</DependentUpon>
     </Compile>
     <Compile Include="Clases\Departamentos.cs" />
+    <Compile Include="cVentasEntreFechas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cVentasEntreFechas.Designer.cs">
+      <DependentUpon>cVentasEntreFechas.cs</DependentUpon>
+    </Compile>
     <Compile Include="ImprimirFactura.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -311,6 +317,13 @@
       <DependentUpon>rUsuarios.cs</DependentUpon>
     </Compile>
     <Compile Include="Clases\Usuarios.cs" />
+    <Compile Include="rVentasEntreFecha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rVentasEntreFecha.Designer.cs">
+      <DependentUpon>rVentasEntreFecha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clases\Ventasentrefecha.cs" />
     <EmbeddedResource Include="Acerca.resx">
       <DependentUpon>Acerca.cs</DependentUpon>
     </EmbeddedResource>
@@ -343,6 +356,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="cUsuarios.resx">
       <DependentUpon>cUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cVentasEntreFechas.resx">
+      <DependentUpon>cVentasEntreFechas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ejemplos.resx">
       <DependentUpon>Ejemplos.cs</DependentUpon>
@@ -397,6 +413,7 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="ImprimirFactura1.rdlc" />
+    <EmbeddedResource Include="rVentasEntreFecha.rdlc" />
     <EmbeddedResource Include="rUsuarios.rdlc" />
     <EmbeddedResource Include="rFactura.rdlc" />
     <EmbeddedResource Include="rFactura.resx">
@@ -425,6 +442,9 @@
     <EmbeddedResource Include="rUsuarios.resx">
       <DependentUpon>rUsuarios.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="rVentasEntreFecha.resx">
+      <DependentUpon>rVentasEntreFecha.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="InventarioDataSet.xsc">
       <DependentUpon>InventarioDataSet.xsd</DependentUpon>
     </None>
@@ -447,6 +467,7 @@
     <None Include="Properties\DataSources\Suplidores.datasource" />
     <None Include="Properties\DataSources\Unidades.datasource" />
     <None Include="Properties\DataSources\Usuarios.datasource" />
+    <None Include="Properties\DataSources\Ventasentrefecha.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

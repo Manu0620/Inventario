@@ -11,7 +11,7 @@ namespace Inventario
 
         public string cantidad { get; set; }
         public string nombre { get; set; }
-        public string precio { get; set; }
+        public double precio { get; set; }
         public double importe { get; set; }
 
         public ProductosVendidos() { }

@@ -33,9 +33,9 @@
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.DepartamentosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.InventarioDataSet = new Inventario.InventarioDataSet();
+            this.departamentosBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.DepartamentosTableAdapter = new Inventario.InventarioDataSetTableAdapters.DepartamentosTableAdapter();
-            this.departamentosBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.DepartamentosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.InventarioDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.departamentosBindingSource1)).BeginInit();
@@ -50,6 +50,10 @@
             // 
             this.InventarioDataSet.DataSetName = "InventarioDataSet";
             this.InventarioDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // departamentosBindingSource1
+            // 
+            this.departamentosBindingSource1.DataSource = typeof(Inventario.Departamentos);
             // 
             // reportViewer1
             // 
@@ -76,19 +80,18 @@
             // 
             this.DepartamentosTableAdapter.ClearBeforeFill = true;
             // 
-            // departamentosBindingSource1
-            // 
-            this.departamentosBindingSource1.DataSource = typeof(Inventario.Departamentos);
-            // 
             // rDepartamentos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(732, 632);
             this.Controls.Add(this.reportViewer1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "rDepartamentos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "rDepartamentos";
+            this.Text = "Reporte de Departamentos";
             this.Load += new System.EventHandler(this.rDepartamentos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DepartamentosBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.InventarioDataSet)).EndInit();

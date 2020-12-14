@@ -95,6 +95,8 @@
             this.lblHora = new System.Windows.Forms.Label();
             this.lblFecha = new System.Windows.Forms.Label();
             this.Hora = new System.Windows.Forms.Timer(this.components);
+            this.usuario = new System.Windows.Forms.Label();
+            this.ventasEntreFechaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.toolStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.InventarioDataSet)).BeginInit();
@@ -374,7 +376,8 @@
             this.suplidoresToolStripMenuItem1,
             this.unidadesToolStripMenuItem1,
             this.usuariosToolStripMenuItem1,
-            this.facturaToolStripMenuItem1});
+            this.facturaToolStripMenuItem1,
+            this.ventasEntreFechaToolStripMenuItem});
             this.tsReportes.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.tsReportes.Image = ((System.Drawing.Image)(resources.GetObject("tsReportes.Image")));
             this.tsReportes.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
@@ -389,7 +392,7 @@
             this.clientesToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("clientesToolStripMenuItem1.Image")));
             this.clientesToolStripMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.clientesToolStripMenuItem1.Name = "clientesToolStripMenuItem1";
-            this.clientesToolStripMenuItem1.Size = new System.Drawing.Size(199, 38);
+            this.clientesToolStripMenuItem1.Size = new System.Drawing.Size(220, 38);
             this.clientesToolStripMenuItem1.Text = "Clientes";
             this.clientesToolStripMenuItem1.Click += new System.EventHandler(this.clientesToolStripMenuItem1_Click);
             // 
@@ -400,7 +403,7 @@
             this.departamentosToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("departamentosToolStripMenuItem1.Image")));
             this.departamentosToolStripMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.departamentosToolStripMenuItem1.Name = "departamentosToolStripMenuItem1";
-            this.departamentosToolStripMenuItem1.Size = new System.Drawing.Size(199, 38);
+            this.departamentosToolStripMenuItem1.Size = new System.Drawing.Size(220, 38);
             this.departamentosToolStripMenuItem1.Text = "Departamentos";
             this.departamentosToolStripMenuItem1.Click += new System.EventHandler(this.departamentosToolStripMenuItem1_Click);
             // 
@@ -411,7 +414,7 @@
             this.productosToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("productosToolStripMenuItem1.Image")));
             this.productosToolStripMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.productosToolStripMenuItem1.Name = "productosToolStripMenuItem1";
-            this.productosToolStripMenuItem1.Size = new System.Drawing.Size(199, 38);
+            this.productosToolStripMenuItem1.Size = new System.Drawing.Size(220, 38);
             this.productosToolStripMenuItem1.Text = "Productos";
             this.productosToolStripMenuItem1.Click += new System.EventHandler(this.productosToolStripMenuItem1_Click);
             // 
@@ -422,7 +425,7 @@
             this.suplidoresToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("suplidoresToolStripMenuItem1.Image")));
             this.suplidoresToolStripMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.suplidoresToolStripMenuItem1.Name = "suplidoresToolStripMenuItem1";
-            this.suplidoresToolStripMenuItem1.Size = new System.Drawing.Size(199, 38);
+            this.suplidoresToolStripMenuItem1.Size = new System.Drawing.Size(220, 38);
             this.suplidoresToolStripMenuItem1.Text = "Suplidores";
             this.suplidoresToolStripMenuItem1.Click += new System.EventHandler(this.suplidoresToolStripMenuItem1_Click);
             // 
@@ -433,7 +436,7 @@
             this.unidadesToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("unidadesToolStripMenuItem1.Image")));
             this.unidadesToolStripMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.unidadesToolStripMenuItem1.Name = "unidadesToolStripMenuItem1";
-            this.unidadesToolStripMenuItem1.Size = new System.Drawing.Size(199, 38);
+            this.unidadesToolStripMenuItem1.Size = new System.Drawing.Size(220, 38);
             this.unidadesToolStripMenuItem1.Text = "Unidades";
             this.unidadesToolStripMenuItem1.Click += new System.EventHandler(this.unidadesToolStripMenuItem1_Click);
             // 
@@ -444,7 +447,7 @@
             this.usuariosToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("usuariosToolStripMenuItem1.Image")));
             this.usuariosToolStripMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.usuariosToolStripMenuItem1.Name = "usuariosToolStripMenuItem1";
-            this.usuariosToolStripMenuItem1.Size = new System.Drawing.Size(199, 38);
+            this.usuariosToolStripMenuItem1.Size = new System.Drawing.Size(220, 38);
             this.usuariosToolStripMenuItem1.Text = "Usuarios";
             this.usuariosToolStripMenuItem1.Click += new System.EventHandler(this.usuariosToolStripMenuItem1_Click);
             // 
@@ -455,7 +458,7 @@
             this.facturaToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("facturaToolStripMenuItem1.Image")));
             this.facturaToolStripMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.facturaToolStripMenuItem1.Name = "facturaToolStripMenuItem1";
-            this.facturaToolStripMenuItem1.Size = new System.Drawing.Size(199, 38);
+            this.facturaToolStripMenuItem1.Size = new System.Drawing.Size(220, 38);
             this.facturaToolStripMenuItem1.Text = "Factura";
             this.facturaToolStripMenuItem1.Click += new System.EventHandler(this.facturaToolStripMenuItem1_Click);
             // 
@@ -562,7 +565,7 @@
             this.facturaToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("facturaToolStripMenuItem.Image")));
             this.facturaToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.facturaToolStripMenuItem.Name = "facturaToolStripMenuItem";
-            this.facturaToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
+            this.facturaToolStripMenuItem.Size = new System.Drawing.Size(173, 38);
             this.facturaToolStripMenuItem.Text = "Facturacion";
             this.facturaToolStripMenuItem.Click += new System.EventHandler(this.facturaToolStripMenuItem_Click);
             // 
@@ -586,7 +589,7 @@
             this.optionsToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.optionsToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
-            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(141, 24);
             this.optionsToolStripMenuItem.Text = "&Opciones";
             // 
             // ejemplosToolStripMenuItem
@@ -595,7 +598,7 @@
             this.ejemplosToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ejemplosToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.ejemplosToolStripMenuItem.Name = "ejemplosToolStripMenuItem";
-            this.ejemplosToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.ejemplosToolStripMenuItem.Size = new System.Drawing.Size(141, 24);
             this.ejemplosToolStripMenuItem.Text = "Ejemplos";
             this.ejemplosToolStripMenuItem.Click += new System.EventHandler(this.ejemplosToolStripMenuItem_Click);
             // 
@@ -865,6 +868,26 @@
             this.Hora.Enabled = true;
             this.Hora.Tick += new System.EventHandler(this.Hora_Tick);
             // 
+            // usuario
+            // 
+            this.usuario.AutoSize = true;
+            this.usuario.BackColor = System.Drawing.Color.MidnightBlue;
+            this.usuario.Font = new System.Drawing.Font("Segoe UI", 12.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usuario.ForeColor = System.Drawing.Color.White;
+            this.usuario.Location = new System.Drawing.Point(949, 33);
+            this.usuario.Name = "usuario";
+            this.usuario.Size = new System.Drawing.Size(0, 23);
+            this.usuario.TabIndex = 10;
+            // 
+            // ventasEntreFechaToolStripMenuItem
+            // 
+            this.ventasEntreFechaToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(68)))));
+            this.ventasEntreFechaToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.ventasEntreFechaToolStripMenuItem.Name = "ventasEntreFechaToolStripMenuItem";
+            this.ventasEntreFechaToolStripMenuItem.Size = new System.Drawing.Size(220, 38);
+            this.ventasEntreFechaToolStripMenuItem.Text = "Ventas entre fecha";
+            this.ventasEntreFechaToolStripMenuItem.Click += new System.EventHandler(this.ventasEntreFechaToolStripMenuItem_Click);
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -872,6 +895,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(68)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1355, 755);
+            this.Controls.Add(this.usuario);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.Minimizar);
             this.Controls.Add(this.Cerrar);
@@ -972,6 +996,8 @@
         private FontAwesome.Sharp.IconToolStripButton botonCancelar;
         private FontAwesome.Sharp.IconToolStripButton botonSalir;
         private FontAwesome.Sharp.IconToolStripButton bAyuda;
+        private System.Windows.Forms.Label usuario;
+        private System.Windows.Forms.ToolStripMenuItem ventasEntreFechaToolStripMenuItem;
     }
 }
 

@@ -38,13 +38,12 @@ namespace Inventario
 
                 pv.cantidad = row["canven"].ToString().Trim();
                 pv.nombre = row["nProducto"].ToString().Trim();
-                pv.precio = row["preven"].ToString().Trim();
+                pv.precio = Convert.ToDouble(row["preven"].ToString().Trim());
                 pv.importe = Convert.ToDouble(row["canven"]) * Convert.ToDouble(row["preven"]);
 
                 lst.Add(pv);
                 pv = null;
             }
-
             productosVendidosBindingSource.DataSource = lst;
             facturaClienteBindingSource.DataSource = lst1;
             reportViewer1.RefreshReport();

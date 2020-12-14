@@ -33,9 +33,9 @@
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.ClientesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.InventarioDataSet = new Inventario.InventarioDataSet();
+            this.clientesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.ClientesTableAdapter = new Inventario.InventarioDataSetTableAdapters.ClientesTableAdapter();
-            this.clientesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.clientesBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ClientesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.InventarioDataSet)).BeginInit();
@@ -52,6 +52,10 @@
             // 
             this.InventarioDataSet.DataSetName = "InventarioDataSet";
             this.InventarioDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // clientesBindingSource1
+            // 
+            this.clientesBindingSource1.DataSource = typeof(Inventario.Clientes);
             // 
             // reportViewer1
             // 
@@ -78,10 +82,6 @@
             // 
             this.ClientesTableAdapter.ClearBeforeFill = true;
             // 
-            // clientesBindingSource1
-            // 
-            this.clientesBindingSource1.DataSource = typeof(Inventario.Clientes);
-            // 
             // clientesBindingSource2
             // 
             this.clientesBindingSource2.DataSource = typeof(Inventario.Clientes);
@@ -90,10 +90,13 @@
             // 
             this.ClientSize = new System.Drawing.Size(960, 689);
             this.Controls.Add(this.reportViewer1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "rClientes";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Reporte de Clientes";
             this.Load += new System.EventHandler(this.Reportes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ClientesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.InventarioDataSet)).EndInit();

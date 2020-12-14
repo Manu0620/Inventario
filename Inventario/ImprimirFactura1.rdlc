@@ -559,7 +559,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Descripcion</Value>
+                              <Value>Nombre</Value>
                               <Style>
                                 <FontFamily>Segoe UI</FontFamily>
                                 <FontSize>12pt</FontSize>
@@ -664,7 +664,7 @@
               </TablixCells>
             </TablixRow>
             <TablixRow>
-              <Height>0.75875cm</Height>
+              <Height>0.86458cm</Height>
               <TablixCells>
                 <TablixCell>
                   <CellContents>
@@ -755,6 +755,7 @@
                               <Style>
                                 <FontFamily>Segoe UI Semibold</FontFamily>
                                 <FontSize>11pt</FontSize>
+                                <Format>#,0.00'$';(#,0.00'$')</Format>
                                 <Color>White</Color>
                               </Style>
                             </TextRun>
@@ -775,6 +776,7 @@
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
                         <PaddingBottom>2pt</PaddingBottom>
+                        <rd:FormatSymbolCulture>en-US</rd:FormatSymbolCulture>
                       </Style>
                     </Textbox>
                   </CellContents>
@@ -792,6 +794,7 @@
                               <Style>
                                 <FontFamily>Segoe UI Semibold</FontFamily>
                                 <FontSize>11pt</FontSize>
+                                <Format>#,0.00'$';(#,0.00'$')</Format>
                                 <Color>White</Color>
                               </Style>
                             </TextRun>
@@ -812,6 +815,7 @@
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
                         <PaddingBottom>2pt</PaddingBottom>
+                        <rd:FormatSymbolCulture>en-US</rd:FormatSymbolCulture>
                       </Style>
                     </Textbox>
                   </CellContents>
@@ -819,7 +823,7 @@
               </TablixCells>
             </TablixRow>
             <TablixRow>
-              <Height>0.78521cm</Height>
+              <Height>0.86458cm</Height>
               <TablixCells>
                 <TablixCell>
                   <CellContents>
@@ -945,6 +949,7 @@
                               <Style>
                                 <FontFamily>Segoe UI Semibold</FontFamily>
                                 <FontSize>11pt</FontSize>
+                                <Format>#,0.00'$';(#,0.00'$')</Format>
                                 <Color>White</Color>
                               </Style>
                             </TextRun>
@@ -965,6 +970,7 @@
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
                         <PaddingBottom>2pt</PaddingBottom>
+                        <rd:FormatSymbolCulture>en-US</rd:FormatSymbolCulture>
                       </Style>
                     </Textbox>
                   </CellContents>
@@ -988,6 +994,9 @@
             </TablixMember>
             <TablixMember>
               <Group Name="Detalles4" />
+              <TablixMembers>
+                <TablixMember />
+              </TablixMembers>
             </TablixMember>
             <TablixMember>
               <KeepWithGroup>Before</KeepWithGroup>
@@ -997,9 +1006,9 @@
         <FixedColumnHeaders>true</FixedColumnHeaders>
         <FixedRowHeaders>true</FixedRowHeaders>
         <DataSetName>ProductosVendidos</DataSetName>
-        <Top>11.29468cm</Top>
-        <Left>2.08703cm</Left>
-        <Height>2.38208cm</Height>
+        <Top>11.05655cm</Top>
+        <Left>2.08704cm</Left>
+        <Height>2.56728cm</Height>
         <Width>19.16875cm</Width>
         <ZIndex>2</ZIndex>
         <Style>
@@ -1016,10 +1025,10 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>W &amp; E Inc.</Value>
+                <Value>W &amp; E Armory</Value>
                 <Style>
                   <FontFamily>Segoe UI</FontFamily>
-                  <FontSize>24pt</FontSize>
+                  <FontSize>36pt</FontSize>
                   <FontWeight>Bold</FontWeight>
                   <Color>MidnightBlue</Color>
                 </Style>
@@ -1033,7 +1042,7 @@
                 <Value>216 Reed Street P.O. Box 1028. </Value>
                 <Style>
                   <FontFamily>Segoe UI</FontFamily>
-                  <FontSize>14pt</FontSize>
+                  <FontSize>16pt</FontSize>
                   <FontWeight>Bold</FontWeight>
                   <Color>DarkRed</Color>
                 </Style>
@@ -1047,7 +1056,7 @@
                 <Value>Clearfield, PA 16830</Value>
                 <Style>
                   <FontFamily>Segoe UI</FontFamily>
-                  <FontSize>14pt</FontSize>
+                  <FontSize>16pt</FontSize>
                   <FontWeight>Bold</FontWeight>
                   <Color>DarkRed</Color>
                 </Style>
@@ -1061,7 +1070,7 @@
                 <Value>(717) 625-7777</Value>
                 <Style>
                   <FontFamily>Segoe UI</FontFamily>
-                  <FontSize>14pt</FontSize>
+                  <FontSize>16pt</FontSize>
                   <FontWeight>Bold</FontWeight>
                   <Color>DarkRed</Color>
                 </Style>
@@ -1085,10 +1094,10 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox1</rd:DefaultName>
-        <Top>3.83328cm</Top>
-        <Left>1.76953cm</Left>
-        <Height>3.60773cm</Height>
-        <Width>8.05153cm</Width>
+        <Top>1.89328cm</Top>
+        <Left>1.18745cm</Left>
+        <Height>4.27772cm</Height>
+        <Width>8.96528cm</Width>
         <ZIndex>3</ZIndex>
         <Style>
           <Border>
@@ -1344,6 +1353,18 @@
       </rd:DataSetInfo>
     </DataSet>
   </DataSets>
+  <EmbeddedImages>
+    <EmbeddedImage Name="ID3dcube">
+      <MIMEType>image/png</MIMEType>
+      <ImageData>iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABtlBMVEUAAAAAAGYSElISFFISE1IRFFEAAAARE1ISElMSE1ISE1IVFVUSE1ISE1ISE1ESElISEk8SFFIRE1MREVUUFE4NDVEREVESE1ESE1IQEFESE1IAAFUMGFUQEFASElMSE1ETE1MVFVUAAIARFFMSE1ITE1MSElESE1ISFFISE1ISE1IgIGAPF1MSE1MSE1IUFFIRE1ISE1ISE1ISElITE1MSE1ISElUTE1ISE1ETE1AREU8SE1ISFFISElIREVUQEFITE1MSE1ISE1IaGk0REVAUFE4SElIUFFMSEkkSE1ISElITE1EAAEAUFFIAJEkRE1ITE1MNDU0SE1ITE1IcHFUREVESE1ITE1IUFFUQEFASE1ISE1IPD0sSE1IREVMPFlARE1ISElITE1ESE1IRE1ISElETE1ITE1ISFFISE1IRE1MSElMRFFESFFISE1MRFFMSElMSElQXF1ESElMTE1ISE1IRE1ESE1ITE1ITE1IRFVQSElESFFIAAF0SFFMSE1ISE1ISE1IODlUTE1USElIRE1IQFVASE1MSE1ITE1ISE1MSE1ISE1ISElITE1IXF10SE1IAAAA2EuWOAAAAkHRSTlMABX3Ry2gBkm/32Qz957yZHcSwDxoTLPG9L8kDFRBHuZckAk3KsznggO3aCCKR9jKi/PIcRPkqYNU2LfrrOB4fiPDfCkkNfzQO5tBeBBkHzTcU7NwJPP74JyD06RH7LiOTcCnH22FRNcP1lFZbqO5ZUzoWz8DhhLuJ6j1V3guO45/zEhuYhjDM6Jatnqy0pQt7AupFAAAAAWJLR0QAiAUdSAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAAd0SU1FB+QMDRU7IoWk
+Ca8AAAJMSURBVFjD7ZZpV9NQEIYnijWSIELRalu1tgYiJZqqqFgsBRWBQilSVKQVtSq41RUV9wVRcZufTKbkHNKYpUn84rHvl3vvSd4nN5PJzAWwErNhY8MmH7jXZlTEuvczWwjQ6B7A8QRo8vAKWwnQ7AGwrQWx1e8BANC23ZMddgR2egPswmAd8O8DQuHdnvy+PXsj+9zbo7H9yr/EC+3u7BzbgapaYs6rUlg8gBp1snFH9i7pIOrUJNYezkNyAg10WDpSi9t3VEAzdcvHbAN//ARaiW/tsSGclJNWgF7RukKdSgH0pfvN7APsafCdOWsBGOSFcwBD7LCRfSQzWsmtMStAJWsAsplGvZ2SKZvpVGZ2AMTxTEh5VFAbOyEHMCGeryzsAYiTbB5gSriwtrooXwKYli6rF2sBIM6IBaUayEXEgNQGcIVmjgBq4s1evcZp9uIIQIl3nXIrVqoOZ+0AJXgRmL6h/x5OADgCOawD6oD/DnDz1ty8LeD2nfjde4Z2/30sF/RdSQ/oTY9BOICyQWXumcT+BzSZ1fbFagCVdUUPyzjwSGePskksdamLx+udWQt4opT1NaXmsShGtf6Jp1gcDK2vOXZBD6g6I4w+S+Dzgjp/sRiI+EsLL6u3xLxq0AB4YU635fbXwTdvh9+JIUjTDe9TBs1/SlABH6S+P69+/LREzs8wQ0Mya/hhluUvkFs06adMNzm/QpmGRN4kNcLAmZ1t8pVOUYZvNKyAC62Qcwni35OJH65Ok/6ffPEXJQaTdWMn/c67ddb1d7UK49RqqI9QgGMAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjAtMTItMTNUMjE6NTk6MzQrMDA6MDB4W52kAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIwLTEyLTEzVDIxOjU5OjM0KzAwOjAwCQYlGAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAAASUVORK5CYII=</ImageData>
+    </EmbeddedImage>
+    <EmbeddedImage Name="ID3dcube1">
+      <MIMEType>image/png</MIMEType>
+      <ImageData>iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABtlBMVEUAAAAAAGYSElISFFISE1IRFFEAAAARE1ISElMSE1ISE1IVFVUSE1ISE1ISE1ESElISEk8SFFIRE1MREVUUFE4NDVEREVESE1ESE1IQEFESE1IAAFUMGFUQEFASElMSE1ETE1MVFVUAAIARFFMSE1ITE1MSElESE1ISFFISE1ISE1IgIGAPF1MSE1MSE1IUFFIRE1ISE1ISE1ISElITE1MSE1ISElUTE1ISE1ETE1AREU8SE1ISFFISElIREVUQEFITE1MSE1ISE1IaGk0REVAUFE4SElIUFFMSEkkSE1ISElITE1EAAEAUFFIAJEkRE1ITE1MNDU0SE1ITE1IcHFUREVESE1ITE1IUFFUQEFASE1ISE1IPD0sSE1IREVMPFlARE1ISElITE1ESE1IRE1ISElETE1ITE1ISFFISE1IRE1MSElMRFFESFFISE1MRFFMSElMSElQXF1ESElMTE1ISE1IRE1ESE1ITE1ITE1IRFVQSElESFFIAAF0SFFMSE1ISE1ISE1IODlUTE1USElIRE1IQFVASE1MSE1ITE1ISE1MSE1ISE1ISElITE1IXF10SE1IAAAA2EuWOAAAAkHRSTlMABX3Ry2gBkm/32Qz957yZHcSwDxoTLPG9L8kDFRBHuZckAk3KsznggO3aCCKR9jKi/PIcRPkqYNU2LfrrOB4fiPDfCkkNfzQO5tBeBBkHzTcU7NwJPP74JyD06RH7LiOTcCnH22FRNcP1lFZbqO5ZUzoWz8DhhLuJ6j1V3guO45/zEhuYhjDM6Jatnqy0pQt7AupFAAAAAWJLR0QAiAUdSAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAAd0SU1FB+QMDRU7IoWk
+Ca8AAAJMSURBVFjD7ZZpV9NQEIYnijWSIELRalu1tgYiJZqqqFgsBRWBQilSVKQVtSq41RUV9wVRcZufTKbkHNKYpUn84rHvl3vvSd4nN5PJzAWwErNhY8MmH7jXZlTEuvczWwjQ6B7A8QRo8vAKWwnQ7AGwrQWx1e8BANC23ZMddgR2egPswmAd8O8DQuHdnvy+PXsj+9zbo7H9yr/EC+3u7BzbgapaYs6rUlg8gBp1snFH9i7pIOrUJNYezkNyAg10WDpSi9t3VEAzdcvHbAN//ARaiW/tsSGclJNWgF7RukKdSgH0pfvN7APsafCdOWsBGOSFcwBD7LCRfSQzWsmtMStAJWsAsplGvZ2SKZvpVGZ2AMTxTEh5VFAbOyEHMCGeryzsAYiTbB5gSriwtrooXwKYli6rF2sBIM6IBaUayEXEgNQGcIVmjgBq4s1evcZp9uIIQIl3nXIrVqoOZ+0AJXgRmL6h/x5OADgCOawD6oD/DnDz1ty8LeD2nfjde4Z2/30sF/RdSQ/oTY9BOICyQWXumcT+BzSZ1fbFagCVdUUPyzjwSGePskksdamLx+udWQt4opT1NaXmsShGtf6Jp1gcDK2vOXZBD6g6I4w+S+Dzgjp/sRiI+EsLL6u3xLxq0AB4YU635fbXwTdvh9+JIUjTDe9TBs1/SlABH6S+P69+/LREzs8wQ0Mya/hhluUvkFs06adMNzm/QpmGRN4kNcLAmZ1t8pVOUYZvNKyAC62Qcwni35OJH65Ok/6ffPEXJQaTdWMn/c67ddb1d7UK49RqqI9QgGMAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjAtMTItMTNUMjE6NTk6MzQrMDA6MDB4W52kAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIwLTEyLTEzVDIxOjU5OjM0KzAwOjAwCQYlGAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAAASUVORK5CYII=</ImageData>
+    </EmbeddedImage>
+  </EmbeddedImages>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>
   <rd:ReportID>44e76db8-fb03-4596-9120-cbdd3b5b36c3</rd:ReportID>
 </Report>

@@ -64,6 +64,15 @@
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.bCodigo);
             this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.SetChildIndex(this.label3, 0);
+            this.panel2.Controls.SetChildIndex(this.bCodigo, 0);
+            this.panel2.Controls.SetChildIndex(this.label1, 0);
+            this.panel2.Controls.SetChildIndex(this.label2, 0);
+            this.panel2.Controls.SetChildIndex(this.label4, 0);
+            this.panel2.Controls.SetChildIndex(this.bNombre, 0);
+            this.panel2.Controls.SetChildIndex(this.bEmail, 0);
+            this.panel2.Controls.SetChildIndex(this.bDireccion, 0);
+            this.panel2.Controls.SetChildIndex(this.ckEstado, 0);
             // 
             // label3
             // 
@@ -166,6 +175,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(793, 434);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "mClientes";
             this.Text = "Registro Clientes";
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();

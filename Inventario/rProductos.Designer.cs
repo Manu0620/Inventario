@@ -33,9 +33,9 @@
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.ProductosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.InventarioDataSet = new Inventario.InventarioDataSet();
+            this.productosBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.ProductosTableAdapter = new Inventario.InventarioDataSetTableAdapters.ProductosTableAdapter();
-            this.productosBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ProductosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.InventarioDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productosBindingSource1)).BeginInit();
@@ -50,6 +50,10 @@
             // 
             this.InventarioDataSet.DataSetName = "InventarioDataSet";
             this.InventarioDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // productosBindingSource1
+            // 
+            this.productosBindingSource1.DataSource = typeof(Inventario.Productos);
             // 
             // reportViewer1
             // 
@@ -76,19 +80,18 @@
             // 
             this.ProductosTableAdapter.ClearBeforeFill = true;
             // 
-            // productosBindingSource1
-            // 
-            this.productosBindingSource1.DataSource = typeof(Inventario.Productos);
-            // 
             // rProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1000, 632);
             this.Controls.Add(this.reportViewer1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "rProductos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "rProductos";
+            this.Text = "Reporte de Productos";
             this.Load += new System.EventHandler(this.rProductos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ProductosBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.InventarioDataSet)).EndInit();

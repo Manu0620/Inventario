@@ -95,6 +95,7 @@ namespace Inventario
         public void NivelUsuario(DataSet DS)
         {
             Nivel = Convert.ToInt32(DS.Tables[0].Rows[0]["Nivel"].ToString());
+            usuario.Text ="Logueado como: "+DS.Tables[0].Rows[0]["nUsuario"].ToString();
             switch (Nivel)
             {
                 case 2:
@@ -234,6 +235,7 @@ namespace Inventario
                 obj.MdiParent = this;
                 obj.Show();
             }
+            
         }
 
         private void Menu_MdiChildActivate(object sender, EventArgs e)
@@ -357,6 +359,12 @@ namespace Inventario
 
             obj.MdiParent = this;
             obj.Show();
+        }
+        private void ventasEntreFechaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            cVentasEntreFechas vef = new cVentasEntreFechas();
+            vef.MdiParent = this;
+            vef.Show();
         }
 
         private void Cerrar_Click(object sender, EventArgs e)

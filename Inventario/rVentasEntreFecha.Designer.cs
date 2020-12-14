@@ -1,6 +1,6 @@
 ﻿namespace Inventario
 {
-    partial class rFactura
+    partial class rVentasEntreFecha
     {
         /// <summary>
         /// Required designer variable.
@@ -30,49 +30,47 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            this.facturaBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.FacturaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.facturaBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.FacturaBindingSource)).BeginInit();
+            this.VentasentrefechaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.ventasentrefechaBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.VentasentrefechaBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ventasentrefechaBindingSource1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // facturaBindingSource1
-            // 
-            this.facturaBindingSource1.DataSource = typeof(Inventario.Factura);
             // 
             // reportViewer1
             // 
             this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            reportDataSource1.Name = "DataFactura";
-            reportDataSource1.Value = this.facturaBindingSource1;
+            reportDataSource1.Name = "VentasEntreFecha";
+            reportDataSource1.Value = this.ventasentrefechaBindingSource1;
             this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "Inventario.rFactura.rdlc";
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "Inventario.rVentasEntreFecha.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(0, 0);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(1228, 505);
+            this.reportViewer1.Size = new System.Drawing.Size(1000, 632);
             this.reportViewer1.TabIndex = 0;
             // 
-            // FacturaBindingSource
+            // VentasentrefechaBindingSource
             // 
-            this.FacturaBindingSource.DataSource = typeof(Inventario.Factura);
+            this.VentasentrefechaBindingSource.DataSource = typeof(Inventario.Ventasentrefecha);
             // 
-            // rFactura
+            // ventasentrefechaBindingSource1
+            // 
+            this.ventasentrefechaBindingSource1.DataSource = typeof(Inventario.Ventasentrefecha);
+            // 
+            // rVentasEntreFecha
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1228, 505);
+            this.ClientSize = new System.Drawing.Size(1000, 632);
             this.Controls.Add(this.reportViewer1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.Name = "rFactura";
+            this.Name = "rVentasEntreFecha";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Reporte de Facturas";
-            this.Load += new System.EventHandler(this.rFactura_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.facturaBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.FacturaBindingSource)).EndInit();
+            this.Text = "rVentasEntreFecha";
+            this.Load += new System.EventHandler(this.rVentasEntreFecha_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.VentasentrefechaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ventasentrefechaBindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -80,7 +78,7 @@
         #endregion
 
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
-        private System.Windows.Forms.BindingSource FacturaBindingSource;
-        private System.Windows.Forms.BindingSource facturaBindingSource1;
+        private System.Windows.Forms.BindingSource VentasentrefechaBindingSource;
+        private System.Windows.Forms.BindingSource ventasentrefechaBindingSource1;
     }
 }

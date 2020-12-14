@@ -40,6 +40,11 @@
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
+            // bConsultar
+            // 
+            this.bConsultar.FlatAppearance.BorderColor = System.Drawing.Color.MidnightBlue;
+            this.bConsultar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MidnightBlue;
+            // 
             // reporte
             // 
             this.reporte.ServerReport.BearerToken = null;
@@ -56,6 +61,11 @@
             this.panel2.Controls.Add(this.bCodigo);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Size = new System.Drawing.Size(657, 434);
+            this.panel2.Controls.SetChildIndex(this.label3, 0);
+            this.panel2.Controls.SetChildIndex(this.bCodigo, 0);
+            this.panel2.Controls.SetChildIndex(this.label1, 0);
+            this.panel2.Controls.SetChildIndex(this.bDescripcion, 0);
+            this.panel2.Controls.SetChildIndex(this.ckEstado, 0);
             // 
             // label3
             // 
@@ -116,6 +126,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(801, 434);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "mUnidades";
             this.Text = "Registro Unidades";
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
