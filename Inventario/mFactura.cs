@@ -19,11 +19,18 @@ namespace Inventario
             );
 
         public static Double total;
+        public string usuario, codusuario = string.Empty;
         public mFactura()
         {
             InitializeComponent();
             Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 15, 15));
             bNumero_Validating(null, null);
+        }
+
+        public void RecibirUsuario(string u, string codu)
+        {
+            usuario = u;
+            codusuario = codu;
         }
 
         private void bNumero_Validating(object sender, CancelEventArgs e)
@@ -214,7 +221,7 @@ namespace Inventario
             if (Utilidades.utilidades.dsTieneDatos(DS))
             {
                 ImprimirFactura obj = new ImprimirFactura();
-                obj.MostrarDatos(DS);
+                obj.MostrarDatos(DS, usuario, codusuario);
                 obj.Show();
             }
             bNumero_Validating(null, null);

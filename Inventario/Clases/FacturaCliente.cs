@@ -9,6 +9,8 @@ namespace Inventario.Clases
         public string codigocli { get; set; }
         public string nomcli { get; set; }
         public string email { get; set; }
+        public string vendedor { get; set; }
+        public string codvendedor { get; set; }
 
         public FacturaCliente() { }
     }

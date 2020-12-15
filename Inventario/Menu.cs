@@ -20,6 +20,7 @@ namespace Inventario
             );
 
         private int childFormNumber, Nivel = 0;
+        private string codusuario, nomusuario = string.Empty;
 
         public Menu()
         {
@@ -96,6 +97,8 @@ namespace Inventario
         {
             Nivel = Convert.ToInt32(DS.Tables[0].Rows[0]["Nivel"].ToString());
             usuario.Text ="Logueado como: "+DS.Tables[0].Rows[0]["nUsuario"].ToString();
+            nomusuario = DS.Tables[0].Rows[0]["nUsuario"].ToString();
+            codusuario = DS.Tables[0].Rows[0]["codUsuario"].ToString();
             switch (Nivel)
             {
                 case 2:
@@ -232,6 +235,7 @@ namespace Inventario
                 MessageBox.Show("Esa ventana ya esta abierta.");
             else
             {
+                obj.RecibirUsuario(nomusuario, codusuario);
                 obj.MdiParent = this;
                 obj.Show();
             }
